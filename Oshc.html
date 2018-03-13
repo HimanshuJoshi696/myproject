@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://10.196.112.72:8080/Medikit/dist/base/index2.html -->
+<html lang="en" data-whatinput="mouse" data-whatintent="mouse">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Medikit - Base</title>
+    <link href="./styles/bundle.css" rel="stylesheet">
+   <style type="text/css">
+       .login-card {
+            position: relative;
+            display: inline-block;
+            text-align: left;
+            max-width: 365px;
+        }
+
+        @media (max-width: 767px) {
+        .login-card {
+            margin-bottom: 1.4117647rem;
+            }
+        }
+        .login-card hr {
+            margin: 12px 0;
+        }
+        @keyframes fadeIn {
+          to {
+            opacity: 1;
+          }
+        }
+
+        
+        #step2 {
+          opacity: 0;
+          animation: fadeIn .5s ease-in 1 forwards;
+        }
+   </style>
+   <script type="text/javascript">
+        var show = function (elem) {
+            elem.style.display = 'block';
+        };
+
+        // Hide an element
+        var hide = function (elem) {
+            elem.style.display = 'none';
+        };
+
+        // Toggle element visibility
+        var toggle = function (elemClassName) {
+            elem = document.getElementById(elemClassName);
+            elem1 = document.getElementById("step1");
+            // If the element is visible, hide it
+            hide(elem1);
+            show(elem);
+
+        };
+        function init(){
+            document.getElementById('step1-action').onclick=function(e){
+                e.preventDefault();
+                toggle("step2");
+                return false;
+            };
+            document.getElementById('step2-action').onclick=function(e){
+                e.preventDefault();
+                toggle1("step1");
+                return false;
+            };
+        }
+        window.onload=init;
+    </script>
+</head>
+
+<body class="show-type-grid">
+    <div class="wrapper">
+
+        <header>
+            <nav>
+                <div class="menu-bar">
+                    <div class="hamburger-wrapper d-xl-none">
+                        <button class="hamburger hamburger--slider js-hamburger" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="top-navigation-bar d-none d-xl-block">
+                        <ul>
+                            <li>
+                                <a href="http://10.196.112.72:8080/Medikit/dist/base/index2.html">Find a provider</a>
+                            </li>
+                            <li>
+                                <a href="http://10.196.112.72:8080/Medikit/dist/base/index2.html">Find a store</a>
+                            </li>
+                            <li>
+                                <a href="http://10.196.112.72:8080/Medikit/dist/base/index2.html">About Medibank</a>
+                            </li>
+                            <li>
+                                <a href="http://10.196.112.72:8080/Medikit/dist/base/index2.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="http://10.196.112.72:8080/Medikit/dist/base/index2.html">Investor centre</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navigation-wrapper">
+                        <div class="logo-medibank">
+                            <a href="http://10.196.112.72:8080/" title="Medibank home">
+                                <svg width="126px" height="24px" viewBox="0 0 126 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="medibank-logo" fill-rule="nonzero">
+                                            <path d="M34.804,19.01 L36.438,21.524 C34.591,23.026 32.653,23.747 30.398,23.747 C25.789,23.747 22.818,20.485 22.818,15.43 C22.818,12.549 23.414,10.633 24.82,9.068 C26.136,7.59 27.728,6.9 29.864,6.9 C31.71,6.9 33.464,7.525 34.498,8.589 C35.965,10.097 36.624,12.264 36.624,15.624 L36.624,16.598 L27.355,16.598 L27.355,16.722 C27.355,19.198 28.57,20.612 30.739,20.612 C32.183,20.612 33.525,20.074 34.804,19.01 L34.804,19.01 Z M27.42,13.52 L32.276,13.52 L32.276,13.33 C32.276,12.139 32.146,11.51 31.771,10.918 C31.365,10.29 30.771,9.976 29.923,9.976 C28.33,9.976 27.42,11.229 27.42,13.461 L27.42,13.52 L27.42,13.52 Z M110.824,23.274 L115.023,23.274 L115.023,0.336 L110.824,0.336 L110.824,23.274 Z M119.222,7.152 L124.262,7.152 L119.293,14.045 L125.45,23.273 L120.5,23.273 L115.116,14.179 L119.222,7.152 Z M89.44,16.073 L89.26,16.073 C86.343,16.073 85.336,16.605 85.336,18.515 C85.336,19.768 86.121,20.615 87.194,20.615 C87.97,20.615 88.757,20.21 89.376,19.515 L89.44,16.073 L89.44,16.073 Z M89.872,22.085 C89.628,22.425 89.457,22.685 88.597,23.111 C88.162,23.329 87.255,23.684 86.224,23.684 C82.656,23.684 80.854,21.984 80.854,18.781 C80.854,15.019 83.458,13.252 88.568,13.252 C88.882,13.252 89.064,13.252 89.509,13.293 L89.509,12.638 C89.509,10.841 89.161,10.248 87.629,10.248 C86.278,10.248 84.712,10.91 82.989,12.068 L81.209,9.053 C82.233,8.397 82.676,8.18 83.799,7.739 C85.369,7.08 86.723,6.797 88.186,6.797 C90.886,6.797 92.726,7.799 93.356,9.589 C93.574,10.248 93.64,10.752 93.64,12.478 L93.541,17.872 L93.545,19.902 C93.545,21.234 93.608,22.61 93.969,23.28 L90.279,23.28 C90.052,23 89.872,22.085 89.872,22.085 L89.872,22.085 Z M16.936,23.273 L16.936,12.703 C16.936,10.793 16.716,10.413 15.618,10.413 C14.842,10.413 13.748,10.947 12.842,11.761 L12.842,23.273 L8.872,23.273 L8.872,12.852 C8.872,10.849 8.594,10.376 7.436,10.376 C6.651,10.376 5.593,10.793 4.686,11.601 L4.686,23.273 L0.595,23.273 L0.595,12.103 C0.595,9.785 0.435,8.783 0.001,8.003 L3.778,6.968 C4.058,7.41 4.183,7.784 4.347,8.6 C5.438,7.531 6.782,6.968 8.247,6.968 C9.561,6.968 10.654,7.41 11.502,8.28 C11.718,8.496 11.934,8.782 12.119,9.068 C13.597,7.57 14.909,6.968 16.653,6.968 C17.903,6.968 19.089,7.348 19.808,7.978 C20.71,8.754 20.994,9.687 20.994,11.882 L20.994,23.272 L16.937,23.272 L16.936,23.273 Z"
+                                                id="Shape" fill="#DD2C35"></path>
+                                            <path d="M57.467,10.256 C57.467,9.631 57.162,9.247 56.793,9.247 C55.919,9.247 55.22,10.499 54.18,13.032 L52.87,12.478 C54.338,8.658 55.92,6.819 58.307,6.819 C60.518,6.819 61.854,8.454 61.854,11.297 C61.854,12.404 61.626,13.617 61.249,15.045 L60.485,18.023 C60.214,18.993 60.149,19.69 60.149,20.067 C60.149,20.831 60.485,21.247 61.021,21.247 C61.961,21.247 62.798,19.894 63.701,17.227 L64.943,17.85 C63.899,21.773 62.123,23.714 59.541,23.714 C57.134,23.714 55.651,22.115 55.651,19.376 C55.651,17.887 56.09,16.264 56.557,14.316 L57.162,11.854 C57.331,11.159 57.467,10.633 57.467,10.256 M58.921,0 C60.427,0 61.561,1.17 61.561,2.673 C61.561,4.147 60.395,5.351 58.921,5.351 C57.4721181,5.31137889 56.3181505,4.12542359 56.3181505,2.676 C56.3181505,1.22657641 57.4721181,0.0406211148 58.921,0.001"
+                                                id="Shape" fill="#189BD7"></path>
+                                            <path d="M95.3,8.003 L99.078,6.968 C99.276,7.258 99.643,8.161 99.643,8.815 C100.619,8.126 100.803,7.998 101.495,7.62 C102.333,7.182 103.433,6.936 104.38,6.936 C106.164,6.936 107.73,7.873 108.234,9.252 C108.45,9.847 108.54,10.542 108.54,11.542 L108.54,23.272 L104.412,23.272 L104.412,12.83 C104.412,11.014 104.094,10.48 103.002,10.48 C102.15,10.48 101.059,11.047 100.086,11.919 L100.086,23.273 L95.886,23.273 L95.886,11.64 C95.886,9.143 95.501,8.362 95.3,8.003 L95.3,8.003 Z M48.594,23.273 C48.412,22.916 48.306,22.282 48.306,22.282 C47.396,23.026 45.966,23.684 44.747,23.684 C40.683,23.684 38.105,20.514 38.105,15.53 C38.105,10.508 40.897,7.053 44.965,7.053 C46.125,7.053 47.031,7.338 47.809,7.963 L47.809,0.337 L51.859,0.337 L51.859,23.274 L48.594,23.274 L48.594,23.273 Z M47.755,11.449 C46.977,10.759 46.221,10.412 45.469,10.412 C43.585,10.412 42.772,11.984 42.772,15.562 C42.772,19.011 43.494,20.136 45.685,20.136 C46.469,20.136 47.347,19.602 47.755,19.106 L47.755,11.449 L47.755,11.449 Z M70.108,0.335 L70.108,8.087 C70.925,7.215 72.154,6.808 73.485,6.808 C77.405,6.808 79.845,9.942 79.845,14.962 C79.845,18.227 78.846,20.77 76.869,22.335 C75.779,23.212 74.678,23.595 73.36,23.587 C71.849,23.584 70.736,23.16 69.826,22.152 C69.826,22.152 69.756,22.695 69.554,23.272 L66.008,23.272 L66.004,17.408 L66.004,0.335 L70.108,0.335 L70.108,0.335 Z M74.894,12.325 C74.589,10.947 73.706,10.289 72.609,10.289 C71.519,10.289 70.761,10.975 70.237,11.57 L70.237,18.978 C70.791,19.483 71.457,20.013 72.584,20.013 C73.617,20.013 74.281,19.601 74.619,18.759 C74.996,17.876 75.078,17.028 75.078,15.054 C75.078,13.614 75.054,13.016 74.894,12.326 L74.894,12.325 Z"
+                                                id="Shape" fill="#DD2C35"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="primary-nav" id="navigation">
+                            <div class="icon-panel d-xl-none">
+                                <ul>
+                                    <li>
+                                        <button class="js-nav-health nav-health is-active">Health insurance</button>
+                                    </li>
+                                    <li>
+                                        <button class="js-nav-other nav-other">Travel, Pet &amp; Life insurance</button>
+                                    </li>
+                                    <li>
+                                        <button class="js-nav-better nav-better">Better health</button>
+                                    </li>
+                                    <li>
+                                        <button class="js-nav-contact nav-contact">Contact us</button>
+                                    </li>
+                                    <li>
+                                        <a class="nav-member" href="https://members.medibank.com.au/" id="ai-members-medibank-com-au">
+                                            <span>Members</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navigation">
+                                <ul>
+                                    <li class="primary-nav-category nav-health-home is-active">
+                                        <a href="https://www.medibank.com.au/health-insurance" class="js-primary-nav" id="ai-health-insurance">Get a Quote
+                                            <span class="d-xl-none">quote</span>
+                                        </a>
+
+                                    </li>
+                                    <li class="primary-nav-category nav-other-home">
+                                        <a href="http://www.medibank.com.au/other-insurance/" id="ai-other-insurance">Apply for cover</a>
+
+                                    </li>
+                                    <li class="primary-nav-category nav-better-home">
+                                        <a href="http://www.medibank.com.au/better-health" class="js-primary-nav" id="ai-better-health">Activate your membership
+                                            <span class="d-xl-none">home</span>
+                                        </a>
+
+                                    </li>
+                                    <li class="primary-nav-category nav-better-home">
+                                        <a href="http://www.medibank.com.au/better-health" class="js-primary-nav" id="ai-better-health">How to Claim
+                                            <span class="d-xl-none">home</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-mobile phone d-xl-none">
+                        <a href="tel:134190" id="ai-tel-134190">
+                            <svg class="icon icon--stroke icon--medium" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                                <path class="currentColor" vector-effect="non-scaling-stroke" d="M34.4 36.3c-.3.3-1.3 1.2-1.3 1.2-1-.8-3.7-2.9-5.9-5.2-2-2.1-4.4-4.9-5.2-5.9 0 0 .8-.9 1.2-1.3 5.9-5.8 4.7-7 2-9.5-3.8-3.5-5-5.8-8.7-3-5.5 4.2-5.6 9.3-4.7 12.7 1.4 3.9 4.9 9 9 13.1l.1.1.1.1c4.1 4.1 9.4 7.8 13.3 9.2 3.4.9 8.5.8 12.7-4.7 2.8-3.7.5-4.9-3-8.7-2.5-2.9-3.7-4-9.6 1.9z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="nudge nudge-signpost nudge-billboard bg-accent text-white ">
+            <div class="container-fluid nudge-container">
+                <div class="row nudge-content">
+                    <div class="col-12 col-md-6 col-lg-7 col-xl-8 nudge-body">
+                        <h1 class="nudge-title ">Welcome to Overseas Student Health Cover</h1>
+                        <p class=" d-md-block">Online access to your cover that gives you peace of mind while you're studying in Australia.</p>
+                        <div class="nudge-actions p-b-1">
+                            <a href="#" class="btn btn-dark">Don't have cover? Apply now</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-5 col-xl-4 nudge-form text-center">
+                        <section class="login-card p-a-1 bg-white text-accent-dark-1">
+                            <button class="btn btn-accent btn-lg btn-block btn-icon text-left">
+                                <svg class="icon icon--stroke icon--small" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path class="currentColor" d="M5.8 7.5V5.8c0-1.2 1-2.2 2.2-2.2s2.2 1 2.2 2.2v1.6H5.8zm7.1.8c0-.5-.4-.8-.8-.8h-.3V5.8C11.8 3.7 10.1 2 8 2S4.2 3.7 4.2 5.8v1.6H4c-.4 0-.8.4-.8.8v4.9c-.1.5.3.9.8.9h8c.4 0 .8-.4.8-.8V8.3z"></path>
+                                </svg>
+                                Already a member? Login
+                            </button>
+
+                            <section class="text-left m-t-1">
+                                <div id="step1">
+                                    <div class="input-group">
+                                        <label for="exampleTextInput">Membership number</label>
+                                        <input type="text" id="exampleTextInput" placeholder="12345678" aria-describedby="inputHelp" class="input-text">
+                                    </div>
+                                    <small class="input-helper " id="inputHelp">
+                                        <a href="#" data-tooltip data-tooltip-content="Your membership number identifies your OSHC policy. It is located on the front of your membership card or on your Policy  Certificate." data-tooltip-classes="tooltip-secondary">What's this?</a>
+                                    </small>
+                                    <a id="step1-action" href="#" class="btn btn-primary btn-block btn-arrow">Log in</a>    
+                                </div>
+                                <div id="step2" class="is-paused" style="display: none">
+                                    <div class="input-group input-with-icon-right">
+                                        <label for="passwordRegister" class="sr-only">Password</label>
+                                        <button type="button" class="btn btn-inline js-toggle-password">Show</button>
+                                        <input type="password" id="passwordRegister" placeholder="Password" aria-describedby="passwordHelp" class="password-input">
+                                        <svg class="icon icon-fill text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path class="currentColor" d="M5.8 7.5V5.8c0-1.2 1-2.2 2.2-2.2s2.2 1 2.2 2.2v1.6H5.8zm7.1.8c0-.5-.4-.8-.8-.8h-.3V5.8C11.8 3.7 10.1 2 8 2S4.2 3.7 4.2 5.8v1.6H4c-.4 0-.8.4-.8.8v4.9c-.1.5.3.9.8.9h8c.4 0 .8-.4.8-.8V8.3z"/></svg>
+                                    </div>
+                                <a id="step1-action" href="#" class="btn btn-primary btn-block btn-arrow">Submit</a>    
+                                </div>
+                                <ul class="list-inline">
+                                    <li><hr><a href="#" >Just arrived in Australia? Activate</a></li>
+                                    <li><hr><a href="#">Not in Australia and want to review cover?</a></li>
+                                </ul>
+                                <div class="btn-group btn-group-list-no-gap m-t-1" style="display: none">
+                                    <a href="#" class="btn btn-dark-ghost btn-arrow btn-text-left">Just arrived in Australia? Activate</a>
+                                    <a href="#" class="btn btn-dark-ghost btn-arrow btn-text-left">Not in Australia and want to review cover?</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="container p-t-1 p-b-1">
+                <div class="row nudge-content">
+                    <div class="col-12 text-center nudge-body">
+                        <h2 class="nudge-title h3">Applying for Overseas Student Health Cover with ahm is easy</h2>
+                        
+                        <div class="row nudge-directions-items">
+                            <div class="col-md-4 nudge-directions-item">
+                                <div class="tile tile-basic d-inline-block">
+                                    <svg class="icon icon-stroke icon-lg text-highlight-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M1.1 48.3l14.4-24.6L23 36.6l14.5-24.8L59 48.5z"/><path class="currentColor" vector-effect="non-scaling-stroke" d="M29.7 26.3l3.5 3.7 4.1-3.7 3.9 3.7 4.1-3.7"/></svg>
+                                    <div class="tile-body-container">
+                                        <h4 class="tile-title"><span class="progress-path-count">1</span>Apply for cover</h4>
+                                        <p class="tile-body">If you don’t have cover, <br /><a href="#">Apply for cover here</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 nudge-directions-item">
+                                <div class="tile tile-basic d-inline-block">
+                                    <svg class="icon icon-stroke icon-lg text-highlight-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M1.1 48.3l14.4-24.6L23 36.6l14.5-24.8L59 48.5z"/><path class="currentColor" vector-effect="non-scaling-stroke" d="M29.7 26.3l3.5 3.7 4.1-3.7 3.9 3.7 4.1-3.7"/></svg>
+                                    <div class="tile-body-container">
+                                        <h4 class="tile-title"><span class="progress-path-count">2</span>In Australia?</h4>
+                                        <p class="tile-body">If you have arrived in Australia and bought cover previously from overseas, <br /><a href="#">activate your membership</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 nudge-directions-item">
+                                <div class="tile tile-basic d-inline-block">
+                                    <svg class="icon icon-stroke icon-lg text-highlight-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M1.1 48.3l14.4-24.6L23 36.6l14.5-24.8L59 48.5z"/><path class="currentColor" vector-effect="non-scaling-stroke" d="M29.7 26.3l3.5 3.7 4.1-3.7 3.9 3.7 4.1-3.7"/></svg>
+                                    <div class="tile-body-container">
+                                        <h4 class="tile-title"><span class="progress-path-count">3</span>Start using your cover</h4>
+                                        <p class="tile-body">If you purchased your cover in Australia or activated your account, you can <a href="#">log in</a> now.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container m-t-2 m-b-2" style="display: none">
+            <div class="row align-items-start">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic">
+                        
+                        <div class="card-body-container">
+                            <div class="card-icon text-center p-l-1 p-r-1">
+                            <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                        </div>
+                            <h3 class="card-title">100% back on optical</h3>
+                            <p class="card-body">Get 100% back on optical, up to your annual liit, at almost any provider in Ausralia when you join Medibank with any of our extras covers. Some services, like lens coating, aren't included.</p>
+                            <a href="#" class="btn btn-dark-ghost btn-arrow">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic">
+                        
+                        <div class="card-body-container">
+                            <div class="card-icon text-center p-l-1 p-r-1">
+                            <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                        </div>
+                            <h3 class="card-title text-center">100% back on optical - TEXT CENTER</h3>
+                            <p class="card-body text-center">Get 100% back on optical, up to your annual liit, at almost any provider in Ausralia when you join Medibank with any of our extras covers. Some services, like lens coating, aren't included.</p>
+                            <a href="#" class="btn btn-dark-ghost btn-arrow">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic">
+                        <img src="images/demo-card.jpg">
+                        <div class="card-body-container">
+                            <h3 class="card-title">100% back on optical</h3>
+                            <p class="card-body">Get 100% back on optical, up to your annual liit, at almost any provider in Ausralia when you join Medibank with any of our extras covers. Some services, like lens coating, aren't included.</p>
+                            <a href="#" class="btn btn-dark-ghost btn-arrow">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-12">
+                    <h3 class="text-center">How you can get started</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container m-t-1 m-b-1">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic m-b-1">
+                        <img src="https://www.medibank.com.au/livebetter/app/uploads/iStock-517740354.jpg">
+                        <div class="card-body-container">
+                            <h2 class="card-title h3">Get a quick quote</h3>
+                            <p class="card-body">Get a quote for Overseas Student Health Cover in just seconds.</p>
+                            <a href="#" class="btn btn-dark btn-arrow">Get a quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic m-b-1">
+                        <img src="https://www.medibank.com.au/livebetter/app/uploads/Student-with-doctor_iStock_74621543_MEDIUM.jpg">
+                        <div class="card-body-container">
+                            
+                            <h2 class="card-title h3">Ready to Activate?</h3>
+                            <p class="card-body">Already got cover and just arrived in Australia?</p>
+                            <a href="#" class="btn btn-dark btn-arrow">Activate now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic m-b-1">
+                        <img src="https://www.medibank.com.au/livebetter/app/uploads/Stocksy_txpa319c20a27v000_Medium_148218-1.jpg">
+                        <div class="card-body-container">
+                            
+                            <h2 class="card-title h3">Review your Cover</h3>
+                            <p class="card-body">Not in Australia yet and want to review or change your cover? </p>
+                            <a href="#" class="btn btn-dark btn-arrow">View cover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-t-2 m-b-1" style="display: none;">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic m-b-1">
+                        <div class="card-body-container">
+                            <div class="card-icon text-center p-l-1 p-r-1">
+                                <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                            </div>
+                            <h3 class="card-title">Get a quick quote</h3>
+                            <p class="card-body">Get a quote for Overseas Student Health Cover in just seconds.</p><p>&nbsp;</p>
+                            <a href="#" class="btn btn-dark btn-arrow">Get a quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic m-b-1">
+                        <div class="card-body-container">
+                            <div class="card-icon text-center p-l-1 p-r-1">
+                                <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                            </div>
+                            <h3 class="card-title">Ready to Activate?</h3>
+                            <p class="card-body">Already got cover and just arrived in Australia?</p><p>&nbsp;</p>
+                            <a href="#" class="btn btn-dark btn-arrow">Activate now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-basic m-b-1">
+                        <div class="card-body-container">
+                            <div class="card-icon text-center p-l-1 p-r-1">
+                                <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                            </div>
+                            <h3 class="card-title">Review your Cover</h3>
+                            <p class="card-body">Not in Australia yet and want to review or change your cover? Need to re-issue a certificate?</p>
+                            <a href="#" class="btn btn-dark btn-arrow">View cover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-t-1" >
+            <div class="row align-items-start">
+                <div class="col-md-12">
+                    <h3 class="text-center">More Resources Available</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container m-t-1 m-b-1" >
+            <div class="row justify-content-around">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tile bg-accent p-a-1 text-white m-b-1">
+                        <div class="tile-icon">
+                            <!--?xml version="1.0" encoding="UTF-8"?-->
+                            <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                        </div>
+                        <div class="tile-content">
+                            <h4 class="margin-top-0 text-white">Education Providers</h4>
+                            <p>Making ahm OSHC your preferred OSHC provider is the smart choice.</p>
+                            <a href="#" class="btn btn-white btn-arrow m-t-1">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="tile bg-accent p-a-1 text-white m-b-1">
+                        <div class="tile-icon">
+                            <!--?xml version="1.0" encoding="UTF-8"?-->
+                            <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                        </div>
+                        <div class="tile-content">
+                            <h4 class="margin-top-0 text-white">Education Agents</h4>
+                            <p>ahm OSHC is chosen by Agents worldwide.</p>
+                            <a href="#" class="btn btn-white btn-arrow m-t-1">Find out more</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="tile bg-accent p-a-1 text-white m-b-1">
+                        <div class="tile-icon">
+                            <!--?xml version="1.0" encoding="UTF-8"?-->
+                            <svg class="icon icon-stroke icon-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M51.3 29.6c0 11.9-9.6 21.5-21.5 21.5S8.3 41.5 8.3 29.6 17.9 8.1 29.8 8.1s21.5 9.7 21.5 21.5z"></path><path class="currentColor" vector-effect="non-scaling-stroke" d="M29 20.1v9.5l10.4 9.6"></path></svg>
+                        </div>
+                        <div class="tile-content">
+                            <h4 class="margin-top-0 text-white">More Information</h4>
+                            <p><a class="text-white" href="http://ahmoshc.com/english.aspx#1089" target="_blank">OSHC FAQs</a>
+                            & <a class="text-white" href="/Privacy-policy">ahm OSHC Privacy Policy</a></p>
+                            
+                            <a href="#" class="btn btn-white btn-arrow m-t-1">View all downloads</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nudge nudge-signpost bg-neutral-light-2" style="display: none;">
+            <div class="container-fluid nudge-container">
+                <div class="row nudge-content">
+                    <div class="col-12 col-md-7 nudge-body">
+                        <div class="tile tile-basic tile-horizontal">
+                            <svg class="icon icon-stroke icon-lg text-highlight-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M30.1 10.5C20 10.5 11.8 13 11.8 22.6c0 6.3 3.5 20.1 8.7 25.9 1 1.1 2.8.9 3.5-.4 1.8-3.4 3.3-10.2 6.1-10.2 2.9 0 4 7.5 6.1 10.6.7 1.1 2.3 1.2 3.2.2 5.3-5.6 8.9-19.8 8.9-26.1 0-9.6-8.1-12.1-18.2-12.1zM24.3 20.2h10.5"/></svg>
+                            <div class="tile-body-container">
+                                <h4 class="tile-title">Get a quick quote</h4>
+                                <p class="tile-body">Get a quote for Overseas Student Health Cover in just seconds.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>
+                                    <a href="/4512/Education-Providers" class="button button--ghost-dark button__large button__block1">Find out more
+                                        <svg class="icon icon--fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path class="currentColor" d="M8.7 7.5c.3.3.3.7 0 1l-2.9 2.9c-.3.3-.3.7 0 1l.5.5c.3.3.7.3 1 0L11.2 9c.5-.5.5-1.4 0-2L7.3 3.1c-.3-.3-.7-.3-1 0l-.5.5c-.3.3-.3.7 0 1l2.9 2.9z"></path>
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tile tile-basic tile-horizontal">
+                            <svg class="icon icon-stroke icon-lg text-highlight-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M26.9 29.9c0 6.6-5.3 11.9-11.9 11.9-6.6 0-11.9-5.3-11.9-11.9S8.4 18.1 15 18.1c6.6 0 11.9 5.3 11.9 11.8zM56.9 29.9c0 6.6-5.3 11.9-11.9 11.9-6.6 0-11.9-5.3-11.9-11.9S38.5 18.1 45 18.1c6.6 0 11.9 5.3 11.9 11.8zM26.9 29.9h6.3M40.4 30.9s3.7-4.5 7.8 0M11.6 30.9s3.7-4.5 7.8 0"/></svg>
+                            
+                            <div class="tile-body-container">
+                                <h4 class="tile-title">Ready to Activate?</h4>
+                                <p class="tile-body">Already got cover and just arrived in Australia?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>
+                                    <a href="/11032/Education-Agents" class="button button--ghost-dark button__large button__block2">Find out more
+                                        <svg class="icon icon--fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path class="currentColor" d="M8.7 7.5c.3.3.3.7 0 1l-2.9 2.9c-.3.3-.3.7 0 1l.5.5c.3.3.7.3 1 0L11.2 9c.5-.5.5-1.4 0-2L7.3 3.1c-.3-.3-.7-.3-1 0l-.5.5c-.3.3-.3.7 0 1l2.9 2.9z"></path>
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tile tile-basic tile-horizontal">
+                            <svg class="icon icon-stroke icon-lg text-highlight-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path class="currentColor" vector-effect="non-scaling-stroke" d="M42.1 20c0 7.9-6.9 17.1-13.3 17.1-6.8 0-13.3-9.2-13.3-17.1 0-7.9 5.4-13.3 13.3-13.3S42.1 12.1 42.1 20zM29.4 37.1h-1.5c-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7h1.5c1.5 0 2.7-1.2 2.7-2.7.1-1.4-1.2-2.7-2.7-2.7zM28.8 42.6v7.3c0 2.1 1.7 3.8 3.8 3.8 2.1 0 3.8-1.7 3.8-3.8v-3.5c0-2.1 1.7-3.8 3.8-3.8 2.1 0 3.8 1.7 3.8 3.8V49"/></svg>
+                            <div class="tile-body-container">
+                                <h4 class="tile-title">Review your Cover</h4>
+                                <p class="tile-body">Not in Australia yet and want to review or change your cover? Need to re-issue a certificate? </p>
+                                <p><a href="/Privacy-policy">ahm OSHC Privacy Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 nudge-image nudge-image-breakout-top nudge-image-crop">
+                    <img src="images/demo-nudge-mother-baby.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+
+       
+
+
+
+        <footer class="footer-wrapper">
+
+            <div class="footer-legals">
+                <div class="container" itemscope="" itemtype="http://schema.org/Organization">
+                    <p>
+                        <svg width="126px" height="24px" class="currentColor" viewBox="0 0 126 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="medibank-logo" fill-rule="nonzero" fill="#FFFFFF">
+                                    <path d="M34.804,19.01 L36.438,21.524 C34.591,23.026 32.653,23.747 30.398,23.747 C25.789,23.747 22.818,20.485 22.818,15.43 C22.818,12.549 23.414,10.633 24.82,9.068 C26.136,7.59 27.728,6.9 29.864,6.9 C31.71,6.9 33.464,7.525 34.498,8.589 C35.965,10.097 36.624,12.264 36.624,15.624 L36.624,16.598 L27.355,16.598 L27.355,16.722 C27.355,19.198 28.57,20.612 30.739,20.612 C32.183,20.612 33.525,20.074 34.804,19.01 L34.804,19.01 Z M27.42,13.52 L32.276,13.52 L32.276,13.33 C32.276,12.139 32.146,11.51 31.771,10.918 C31.365,10.29 30.771,9.976 29.923,9.976 C28.33,9.976 27.42,11.229 27.42,13.461 L27.42,13.52 L27.42,13.52 Z M110.824,23.274 L115.023,23.274 L115.023,0.336 L110.824,0.336 L110.824,23.274 Z M119.222,7.152 L124.262,7.152 L119.293,14.045 L125.45,23.273 L120.5,23.273 L115.116,14.179 L119.222,7.152 Z M89.44,16.073 L89.26,16.073 C86.343,16.073 85.336,16.605 85.336,18.515 C85.336,19.768 86.121,20.615 87.194,20.615 C87.97,20.615 88.757,20.21 89.376,19.515 L89.44,16.073 L89.44,16.073 Z M89.872,22.085 C89.628,22.425 89.457,22.685 88.597,23.111 C88.162,23.329 87.255,23.684 86.224,23.684 C82.656,23.684 80.854,21.984 80.854,18.781 C80.854,15.019 83.458,13.252 88.568,13.252 C88.882,13.252 89.064,13.252 89.509,13.293 L89.509,12.638 C89.509,10.841 89.161,10.248 87.629,10.248 C86.278,10.248 84.712,10.91 82.989,12.068 L81.209,9.053 C82.233,8.397 82.676,8.18 83.799,7.739 C85.369,7.08 86.723,6.797 88.186,6.797 C90.886,6.797 92.726,7.799 93.356,9.589 C93.574,10.248 93.64,10.752 93.64,12.478 L93.541,17.872 L93.545,19.902 C93.545,21.234 93.608,22.61 93.969,23.28 L90.279,23.28 C90.052,23 89.872,22.085 89.872,22.085 L89.872,22.085 Z M16.936,23.273 L16.936,12.703 C16.936,10.793 16.716,10.413 15.618,10.413 C14.842,10.413 13.748,10.947 12.842,11.761 L12.842,23.273 L8.872,23.273 L8.872,12.852 C8.872,10.849 8.594,10.376 7.436,10.376 C6.651,10.376 5.593,10.793 4.686,11.601 L4.686,23.273 L0.595,23.273 L0.595,12.103 C0.595,9.785 0.435,8.783 0.001,8.003 L3.778,6.968 C4.058,7.41 4.183,7.784 4.347,8.6 C5.438,7.531 6.782,6.968 8.247,6.968 C9.561,6.968 10.654,7.41 11.502,8.28 C11.718,8.496 11.934,8.782 12.119,9.068 C13.597,7.57 14.909,6.968 16.653,6.968 C17.903,6.968 19.089,7.348 19.808,7.978 C20.71,8.754 20.994,9.687 20.994,11.882 L20.994,23.272 L16.937,23.272 L16.936,23.273 Z"
+                                        id="Shape"></path>
+                                    <path d="M57.467,10.256 C57.467,9.631 57.162,9.247 56.793,9.247 C55.919,9.247 55.22,10.499 54.18,13.032 L52.87,12.478 C54.338,8.658 55.92,6.819 58.307,6.819 C60.518,6.819 61.854,8.454 61.854,11.297 C61.854,12.404 61.626,13.617 61.249,15.045 L60.485,18.023 C60.214,18.993 60.149,19.69 60.149,20.067 C60.149,20.831 60.485,21.247 61.021,21.247 C61.961,21.247 62.798,19.894 63.701,17.227 L64.943,17.85 C63.899,21.773 62.123,23.714 59.541,23.714 C57.134,23.714 55.651,22.115 55.651,19.376 C55.651,17.887 56.09,16.264 56.557,14.316 L57.162,11.854 C57.331,11.159 57.467,10.633 57.467,10.256 M58.921,0 C60.427,0 61.561,1.17 61.561,2.673 C61.561,4.147 60.395,5.351 58.921,5.351 C57.4721181,5.31137889 56.3181505,4.12542359 56.3181505,2.676 C56.3181505,1.22657641 57.4721181,0.0406211148 58.921,0.001"
+                                        id="Shape"></path>
+                                    <path d="M95.3,8.003 L99.078,6.968 C99.276,7.258 99.643,8.161 99.643,8.815 C100.619,8.126 100.803,7.998 101.495,7.62 C102.333,7.182 103.433,6.936 104.38,6.936 C106.164,6.936 107.73,7.873 108.234,9.252 C108.45,9.847 108.54,10.542 108.54,11.542 L108.54,23.272 L104.412,23.272 L104.412,12.83 C104.412,11.014 104.094,10.48 103.002,10.48 C102.15,10.48 101.059,11.047 100.086,11.919 L100.086,23.273 L95.886,23.273 L95.886,11.64 C95.886,9.143 95.501,8.362 95.3,8.003 L95.3,8.003 Z M48.594,23.273 C48.412,22.916 48.306,22.282 48.306,22.282 C47.396,23.026 45.966,23.684 44.747,23.684 C40.683,23.684 38.105,20.514 38.105,15.53 C38.105,10.508 40.897,7.053 44.965,7.053 C46.125,7.053 47.031,7.338 47.809,7.963 L47.809,0.337 L51.859,0.337 L51.859,23.274 L48.594,23.274 L48.594,23.273 Z M47.755,11.449 C46.977,10.759 46.221,10.412 45.469,10.412 C43.585,10.412 42.772,11.984 42.772,15.562 C42.772,19.011 43.494,20.136 45.685,20.136 C46.469,20.136 47.347,19.602 47.755,19.106 L47.755,11.449 L47.755,11.449 Z M70.108,0.335 L70.108,8.087 C70.925,7.215 72.154,6.808 73.485,6.808 C77.405,6.808 79.845,9.942 79.845,14.962 C79.845,18.227 78.846,20.77 76.869,22.335 C75.779,23.212 74.678,23.595 73.36,23.587 C71.849,23.584 70.736,23.16 69.826,22.152 C69.826,22.152 69.756,22.695 69.554,23.272 L66.008,23.272 L66.004,17.408 L66.004,0.335 L70.108,0.335 L70.108,0.335 Z M74.894,12.325 C74.589,10.947 73.706,10.289 72.609,10.289 C71.519,10.289 70.761,10.975 70.237,11.57 L70.237,18.978 C70.791,19.483 71.457,20.013 72.584,20.013 C73.617,20.013 74.281,19.601 74.619,18.759 C74.996,17.876 75.078,17.028 75.078,15.054 C75.078,13.614 75.054,13.016 74.894,12.326 L74.894,12.325 Z"
+                                        id="Shape"></path>
+                                </g>
+                            </g>
+                        </svg> Copyright © Wed Nov 22 15:15:13 EST 2017
+                        <span itemprop="name">Medibank Private Limited</span>. All rights reserved. ABN 47 080 890 259.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./scripts/bundle.js"></script>
+    <style>
+        @media (min-width: 576px) {
+            .cards-widget .card-box {
+                min-height: 260px
+            }
+            .cards-widget .card--body {
+                min-height: 80px;
+            }
+            .tiles-widget .item--body-container {
+                min-height: 195px
+            }
+        }
+
+        .card--login .card--header {
+            padding: 15px 15px 8px;
+        }
+
+        .card--login .card--header h6 {
+            margin: 0
+        }
+
+        .border-neutral-light-1{border-color:#eaecf1 !important}
+    </style>
+
+</body>
+
+</html>
